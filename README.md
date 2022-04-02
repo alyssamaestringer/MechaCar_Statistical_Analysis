@@ -52,3 +52,28 @@ For Lot2, the p-value is 0.61, which is also above our assumed significance leve
 ![lot3](t_test_three.png)
 
 For Lot3, the p-value is 0.042 and above our assumed significance level of 0.05 percent. The PSI of Lot3 is statistically similar to the population mean of 1,500 PSI.
+
+
+## Study Design: MechCar vs Competition
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+### What metric or metrics are you going to test?
+In order to quantify how MechaCar performs against the competition, I could comparre multiple different metrics such as horse power, mpg, highway fuel efficiency and cost. 
+
+### What is the null hypothesis or alternative hypothesis?
+I want to look at if there is a statistical difference between the distribution means from multiple samples.
+
+Is there any statistical difference in horsepower between MechaCar and the competition based on cost?
+Is there any statistical difference in mpg of between MechaCar and the competition based on cost?
+Is there any statistical difference in fuel efficiency between MechaCar and the competition based on cost?
+
+### What statistical test would you use to test the hypothesis? And why?
+Since I am wanting to look at the means of a continuous numerical variable across various groups, I would test with a one-way Anova test to answer each question I listed above. 
+
+### What data is needed to run the statistical test?
+Since I am performing an Anova test and Anova tests have assumptions about the input data, I must have:
+1. The dependent variable is numerical and continuous, and the independent variables are categorical.
+2. The dependent variable is considered to be normally distributed.
+3. The variance among each group should be very similar.
+
+For clarity, the independent variable in this case is cost of vehicle. The dependent variables are horsepower, mpg, and fuel efficiency. I would need to convert the independent variable, cost of vehicle, to a categorical vector in order to perform this statistical test. I would clean the data and convert using factor() in R.
