@@ -27,3 +27,28 @@ Looking at Total Summary, technically, yes the variance technically meets manufa
 ![lotsummary](lot_summary.png)
 
 Looking at Lot Summary, we can see that the variance of the suspension coils do not exceed 100 PSI in Lot1 and Lot2, however it does exceed 100 variance in Lot3. Therefore, Lot3 may not meet design specifications.
+
+## T-Tests on Suspension Coils
+Looking at the t-tests, we are determining if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 PSI.
+
+![ttestsummary](t_test.png)
+
+As you can see, our p-value is 0.999 and above the assumed significance level of 0.05 percent therefore, we do not have sufficient evidence to reject the null hypothesis. The two means are statistically similar. 
+
+### Now let's break down by lot:
+#### Lot1
+![lot1](t_test_one.png)
+
+For Lot1, the p-value is 1 and way above our assumed significance level of 0.05 percent. Therefore, we reject the null hypothesis and the PSI of Lot1 is statistically similar to the population mean of 1,500 PSI.
+
+
+#### Lot2
+![lot2](t_test_two.png)
+
+For Lot2, the p-value is 0.61, which is also above our assumed significance level of 0.05 percent. The PSI of Lot2 is statistically similar to the population mean of 1,500 PSI.
+
+
+#### Lot3
+![lot3](t_test_three.png)
+
+For Lot3, the p-value is 0.042 and above our assumed significance level of 0.05 percent. The PSI of Lot3 is statistically similar to the population mean of 1,500 PSI.
